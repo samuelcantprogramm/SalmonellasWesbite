@@ -65,3 +65,166 @@ body {
     transform: scale(1.1);
     background-color: #ff1a1a;
 }
+
+:root{
+    --bg: #fff6f8;
+    --card: #fff;
+    --accent: #ff4b7d; /* rose */
+    --accent-2: #ff9bb3; /* soft pink */
+    --muted: #6b4650;
+    --glass: rgba(255,255,255,0.6);
+    --radius: 14px;
+    --gap: 18px;
+    --transition: 300ms cubic-bezier(.2,.9,.2,1);
+}
+
+body {
+    background: radial-gradient(circle at 10% 10%, #fff0f2 0%, var(--bg) 40%);
+    color: var(--muted);
+}
+
+.gallery-header{
+    text-align: center;
+    margin: 28px 12px 8px;
+    color: #b23b57;
+}
+
+.gallery-header h1{
+    font-size: 2rem;
+    color: #e23b63;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+    text-shadow: 0 2px 0 rgba(255,182,200,0.4);
+}
+
+.gallery-header .lead{
+    color: #8b4a57;
+    opacity: 0.9;
+    font-size: 0.95rem;
+}
+
+/* Responsive grid */
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: var(--gap);
+    max-width: 1200px;
+    margin: 20px auto 60px;
+    padding: 20px;
+    align-items: stretch;
+}
+
+.gallery-empty{
+    grid-column: 1/-1;
+    text-align: center;
+    color: #a65a6b;
+    padding: 22px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, rgba(255,230,236,0.6), rgba(255,245,247,0.4));
+    border: 1px dashed rgba(180,80,110,0.25);
+}
+
+.gallery-item{
+    background: linear-gradient(180deg, var(--card), rgba(255,245,247,0.6));
+    border-radius: var(--radius);
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(178,69,98,0.12);
+    transition: transform var(--transition), box-shadow var(--transition);
+    cursor: pointer;
+    min-height: 140px;
+    display: grid;
+    place-items: center;
+}
+
+.gallery-item img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 420ms ease, filter 420ms ease;
+    will-change: transform;
+}
+
+.gallery-item::after{
+    /* decorative heart that fades/zooms on hover */
+    content: '❤';
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    font-size: 28px;
+    color: var(--accent-2);
+    opacity: 0;
+    transform: translateY(6px) scale(0.6);
+    transition: transform 360ms cubic-bezier(.2,.9,.2,1), opacity 260ms ease;
+    text-shadow: 0 6px 18px rgba(226,59,99,0.12);
+    pointer-events: none;
+}
+
+.gallery-item figcaption{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 14px 16px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.0), rgba(255,230,236,0.85));
+    transform: translateY(100%);
+    transition: transform 320ms var(--transition);
+    color: #5a353e;
+    backdrop-filter: blur(4px);
+}
+
+.gallery-item figcaption h3{
+    margin: 0 0 6px 0;
+    font-size: 1rem;
+    color: #6b313f;
+}
+
+.gallery-item figcaption p{
+    margin: 0;
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+/* Hover / focus effects (also accessible via keyboard) */
+.gallery-item:hover,
+.gallery-item:focus-visible{
+    transform: translateY(-6px) rotateZ(-0.25deg);
+    box-shadow: 0 18px 40px rgba(178,69,98,0.18);
+    outline: none;
+}
+
+.gallery-item:hover img,
+.gallery-item:focus-visible img{
+    transform: scale(1.08) translateZ(0);
+    filter: saturate(1.05) contrast(1.02) brightness(0.98);
+}
+
+.gallery-item:hover::after,
+.gallery-item:focus-visible::after{
+    opacity: 0.95;
+    transform: translateY(0) scale(1);
+}
+
+.gallery-item:hover figcaption,
+.gallery-item:focus-visible figcaption{
+    transform: translateY(0);
+}
+
+/* Keyboard accessibility hint */
+.gallery-item:focus-visible{
+    box-shadow: 0 0 0 4px rgba(255,75,125,0.12), 0 14px 30px rgba(178,69,98,0.12);
+}
+
+/* Small floating-heart animation used sparingly */
+@keyframes floatHeart{
+    0%{ transform: translateY(0) scale(0.9); opacity: 0.0 }
+    30%{ opacity: 0.9; transform: translateY(-8px) scale(1.05) }
+    100%{ transform: translateY(-26px) scale(0.9); opacity: 0 }
+}
+
+/* Responsive tweaks */
+@media (max-width:520px){
+    .gallery-header h1{ font-size:1.5rem }
+    :root{ --gap: 12px }
+}

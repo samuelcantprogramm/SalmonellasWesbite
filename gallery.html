@@ -4,8 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <nav class="navbar">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="#">Gifts</a></li>
+    </ul>   
+</nav>
+    <header class="gallery-header">
+        <h1>Valentine's Gallery</h1>
+        <p class="lead">A responsive, romantic grid — hover or focus any image to reveal details.</p>
+    </header>
+
+    <!-- To add images: copy a <figure class="gallery-item"> block, update the `src` and `alt`, and the grid will adapt. -->
+    <main>
+        <section class="gallery" aria-label="Valentine photo gallery">
+            <figure class="gallery-item" tabindex="0">
+                <img src="image1.jpg" alt="Red roses bouquet" loading="lazy">
+                <figcaption>
+                    <h3>Roses</h3>
+                    <p>Classic red bouquet — love in full bloom.</p>
+                </figcaption>
+            </figure>
+
+            <figure class="gallery-item" tabindex="0">
+                <img src="image2.jpg" alt="Heart-shaped box of chocolates" loading="lazy">
+                <figcaption>
+                    <h3>Chocolates</h3>
+                    <p>Sweet treats for your sweetheart.</p>
+                </figcaption>
+            </figure>
+
+            <figure class="gallery-item" tabindex="0">
+                <img src="image3.jpg" alt="Couple holding hands" loading="lazy">
+                <figcaption>
+                    <h3>Together</h3>
+                    <p>A moment to remember.</p>
+                </figcaption>
+            </figure>
+
+            <figure class="gallery-item" tabindex="0">
+                <img src="image4.jpg" alt="Valentine card with message" loading="lazy">
+                <figcaption>
+                    <h3>Card</h3>
+                    <p>A tiny note, big feelings.</p>
+                </figcaption>
+            </figure>
+
+            <figure class="gallery-item" tabindex="0">
+                <img src="image5.jpg" alt="Candlelit dinner setup" loading="lazy">
+                <figcaption>
+                    <h3>Dinner</h3>
+                    <p>Warm lights, warmer hearts.</p>
+                </figcaption>
+            </figure>
+
+            <!-- Example empty-state (will show when no images are present) -->
+            <div class="gallery-empty" aria-hidden="true">Add images to populate the gallery ✨</div>
+        </section>
+    </main>
+
 </body>
 </html>
