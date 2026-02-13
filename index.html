@@ -3,115 +3,307 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentines day</title>
+    <title>for my girl · valentine 2026</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Font Quicksand -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
 </head>
 <body>
+    <!-- NAVIGATION BAR -->
     <nav class="navbar">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="#">Gifts</a></li>
-    </ul>
+        <div class="nav-logo">
+            <i class="fas fa-heart"></i>
+            <span>for my girl</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#timeline"><i class="fas fa-clock"></i> Timeline</a></li>
+            <li><a href="#gallery"><i class="fas fa-images"></i> Gallery</a></li>
+            <li><a href="#video"><i class="fas fa-video"></i> Video</a></li>
+            <li><a href="#letter"><i class="fas fa-envelope"></i> Letter</a></li>
+            <li><a href="#footer"><i class="fas fa-heart"></i> Footer</a></li>
+        </ul>
+        <div class="theme-switcher-nav">
+            <button class="theme-btn-nav active" id="nav-theme-default"><i class="fas fa-heart"></i> White</button>
+            <button class="theme-btn-nav" id="nav-theme-red"><i class="fas fa-heart"></i> Red</button>
+            <button class="theme-btn-nav" id="nav-theme-purple"><i class="fas fa-heart"></i> Purple</button>
+        </div>
     </nav>
 
-<!-- HERO -->
-<section class="hero">
-    <div class="hero-left">
-        <h1>
-            To my one and only love,<br>
-            Happy Valentine's Day, Ella 💗
-            </h1>
+    <main class="container">
+        <!-- HERO SECTION -->
+        <section id="hero">
+            <div class="hero">
+                <div class="hero-left">
+                    <h1>Mamon and Baba<br>since 2021</h1>
+                    <p class="sub">Every day with you is valentine, but today we celebrate us. happy valentine my love.</p>
+                </div>
+                <div class="hero-right">
+                    <img src="images/hero-couple.jpg" alt="us - valentine 2026" onerror="this.src='https://placehold.co/600x400/f9e1e1/e34c67?text=You+%26+Me';this.onerror=null;">
+                </div>
+            </div>
+        </section>
 
-            <p>
-            Every line of code here is a tiny reminder
-            of how much you mean to me.
-            </p>
+        <!-- TIMELINE SECTION -->
+        <section id="timeline">
+            <div class="section-header">
+                <h2>Our timeline</h2>
+                <p>six years of us, six years of love</p>
+            </div>
+            <div class="timeline-grid">
+                <!-- 2021 -->
+                <div class="timeline-card">
+                    <img class="timeline-img" src="images/timeline-2021.jpg" alt="2021 us" onerror="this.src='https://placehold.co/200x200/ffe3e8/e34c67?text=2021';this.onerror=null;">
+                    <h3>2021</h3>
+                    <h4>the beginning</h4>
+                    <p>We've known each other for years, but this is the year where I was falling in love with you.</p>
+                </div>
+                <!-- 2022 -->
+                <div class="timeline-card">
+                    <img class="timeline-img" src="images/timeline-2022.jpg" alt="2022 us" onerror="this.src='https://placehold.co/200x200/ffe3e8/e34c67?text=2022';this.onerror=null;">
+                    <h3>2022</h3>
+                    <h4>deeper</h4>
+                    <p>This is the year we started to really see each other often, and the year where I committed more towards our relationship.</p>
+                </div>
+                <!-- 2023 -->
+                <div class="timeline-card">
+                    <img class="timeline-img" src="images/timeline-2023.jpg" alt="2023 us" onerror="this.src='https://placehold.co/200x200/ffe3e8/e34c67?text=2023';this.onerror=null;">
+                    <h3>2023</h3>
+                    <h4>growing</h4>
+                    <p>It was a year of growth, both individually and together. We learned so much about each other and ourselves.</p>
+                </div>
+                <!-- 2024 -->
+                <div class="timeline-card">
+                    <img class="timeline-img" src="images/timeline-2024.jpg" alt="2024 us" onerror="this.src='https://placehold.co/200x200/ffe3e8/e34c67?text=2024';this.onerror=null;">
+                    <h3>2024</h3>
+                    <h4>All roads led to you.</h4>
+                    <p>Destiny gave you, once again. This time, I'll never going to let you go.</p>
+                </div>
+                <!-- 2025 -->
+                <div class="timeline-card">
+                    <img class="timeline-img" src="images/timeline-2025.jpg" alt="2025 us" onerror="this.src='https://placehold.co/200x200/ffe3e8/e34c67?text=2025';this.onerror=null;">
+                    <h3>2025</h3>
+                    <h4>It's us again, forever.</h4>
+                    <p>Every day I choose you. you still give me butterflies, my baba.</p>
+                </div>
+                <!-- 2026 -->
+                <div class="timeline-card">
+                    <img class="timeline-img" src="images/timeline-2026.jpg" alt="2026 us" onerror="this.src='https://placehold.co/200x200/ffe3e8/e34c67?text=2026';this.onerror=null;">
+                    <h3>2026</h3>
+                    <h4>Forever, and ever.</h4>
+                    <p>this valentine, and every single one after. love you.</p>
+                </div>
+            </div>
+        </section>
 
+        <!-- GALLERY CAROUSEL - REDESIGNED CARDS -->
+        <section id="gallery">
+            <div class="section-header">
+                <h2>snapshots of us</h2>
+                <p>our favorite moments, frozen in time</p>
+            </div>
+            <div class="gallery-showcase">
+                <div class="carousel-container">
+                    <button class="carousel-btn" id="carousel-left"><i class="fas fa-chevron-left"></i></button>
+                    <div class="carousel-track" id="carousel-track">
+                        <!-- NEW PREMIUM GALLERY CARDS -->
+                        <div class="gallery-card">
+                            <div class="photo-date">Bo's Coffee Couple</div>
+                            <div class="photo-frame">
+                                <img src="images/gallery-1.jpg" alt="jan 2022" onerror="this.src='https://placehold.co/400x400/ffe3e8/e34c67?text=Jan+2022';this.onerror=null;">
+                            </div>
+                            <div class="gallery-caption">
+                                <span>Playlist ng mga cute</span>
+                                <p>pero bmw theme song</p>
+                            </div>
+                        </div>
+                        <div class="gallery-card">
+                            <div class="photo-date">Mga grade 7 na nag meetup:</div>
+                            <div class="photo-frame">
+                                <img src="images/gallery-2.jpg" alt="dec 2022" onerror="this.src='https://placehold.co/400x400/ffe3e8/e34c67?text=Dec+2022';this.onerror=null;">
+                            </div>
+                            <div class="gallery-caption">
+                                <span>Pandemic yarn</span>
+                                <p>with matching glasses and facemask pa yan</p>
+                            </div>
+                        </div>
+                        <div class="gallery-card">
+                            <div class="photo-date">Your first flowers with me again.</div>
+                            <div class="photo-frame">
+                                <img src="images/gallery-3.jpg" alt="summer 2023" onerror="this.src='https://placehold.co/400x400/ffe3e8/e34c67?text=Summer+2023';this.onerror=null;">
+                            </div>
+                            <div class="gallery-caption">
+                                <span>Meetup ng grade 7 part II</span>
+                                <p>Still one of the happiest days of my life.</p>
+                            </div>
+                        </div>
+                        <div class="gallery-card">
+                            <div class="photo-date">Nag formal attire si Seemoners</div>
+                            <div class="photo-frame">
+                                <img src="images/gallery-4.jpg" alt="winter 2024" onerror="this.src='https://placehold.co/400x400/ffe3e8/e34c67?text=Winter+2024';this.onerror=null;">
+                            </div>
+                            <div class="gallery-caption">
+                                <span>pictorial nila Ella</span>
+                                <p>hehe, I miss kissing you like I did here.</p>
+                            </div>
+                        </div>
+                        <div class="gallery-card">
+                            <div class="photo-date">Nag-kainisan yarn?</div>
+                            <div class="photo-frame">
+                                <img src="images/gallery-5.jpg" alt="birthday 2025" onerror="this.src='https://placehold.co/400x400/ffe3e8/e34c67?text=Birthday+2025';this.onerror=null;">
+                            </div>
+                            <div class="gallery-caption">
+                                <span>card dayy</span>
+                                <p>nag lilinis ako ng sahig kase si papa mo na kukuha ng card</p>
+                            </div>
+                        </div>
+                        <div class="gallery-card">
+                            <div class="photo-date">VALENTINE 2026</div>
+                            <div class="photo-frame">
+                                <img src="images/gallery-6.jpg" alt="valentine 2026" onerror="this.src='https://placehold.co/400x400/ffe3e8/e34c67?text=Valentine+2026';this.onerror=null;">
+                            </div>
+                            <div class="gallery-caption">
+                                <span>our day</span>
+                                <p>still making memories</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn" id="carousel-right"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
 
-        <div class="hero-buttons">
-            <button>Button</button>
-            <button>Button</button>
+        <!-- VIDEO MESSAGE - ENHANCED -->
+        <section id="video">
+            <div class="section-header">
+                <h2>a song for you</h2>
+                <p>i recorded this just for you, my love</p>
+            </div>
+            <div class="video-showcase">
+                <div class="video-box">
+                    <div class="video-wrapper">
+                        <video controls poster="images/video-poster.jpg" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <source src="videos/my-singing-valentine.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-fallback" style="display: none; text-align: center; padding: 50px;">
+                            <i class="fas fa-video" style="font-size: 4rem; margin-bottom: 15px;"></i>
+                            <p>🎶 your video will appear here 🎶</p>
+                            <p style="font-size: 0.9rem;">(replace with your singing video)</p>
+                        </div>
+                    </div>
+                    <div class="video-caption">
+                        <i class="fas fa-star"></i>
+                        <span>for your ears only, baby</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERACTIVE ENVELOPE & LETTER - ENHANCED -->
+        <section id="letter">
+            <div class="section-header">
+                <h2>open when you miss me</h2>
+                <p>click the envelope to open your letter</p>
+            </div>
+            <div class="envelope-showcase">
+                <div class="envelope-wrapper">
+                    <!-- The Envelope -->
+                    <div class="envelope" id="envelope">
+                        <div class="envelope-flap">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="envelope-body">
+                            <i class="fas fa-envelope-open-text"></i>
+                            <p>open when you miss me</p>
+                            <div class="open-hint">
+                                <i class="fas fa-arrow-up"></i> click to open <i class="fas fa-arrow-up"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- The Letter -->
+                    <div class="letter-card" id="letterCard">
+                        <button class="close-btn" id="closeLetterBtn"><i class="fas fa-times"></i></button>
+                        <i class="fas fa-heart"></i>
+                        <h3>My Valence,</h3>
+                        <p>From 2021 to now, you've changed my world. you're the first thought in my morning and the sweetest at night. I don't think I say it enough, but you're the best thing that's ever happened to me. thank you for being you — soft, strong, and so beautifully real. <br><br> i'll keep choosing you, today and always. <br><br> happy valentine's day, my girl. <br> I love you Val.</p>
+                        <div class="signature">yours only, <br>Mamon.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER - ENHANCED -->
+    <footer id="footer">
+        <div class="footer-hearts">
+            <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i>
         </div>
-    </div>
+        <h3>made with all my heart</h3>
+        <p>for my girl • valentine 2026</p>
+        <p style="margin-top: 30px;">forever yours, forever us. <i class="fas fa-heart" style="color: var(--accent);"></i></p>
+    </footer>
 
-    <div class="hero-right"></div>
-</section>
+    <script>
+        (function() {
+            "use strict";
 
-<div class="love-marquee">
-    <div class="track">
-        I love you Ella • Mahal kita Ella • Te amo Ella •
-        Je t'aime Ella • Ich liebe dich Ella •
-        사랑해 Ella • 愛してる Ella •
-        Ti amo Ella • Я тебя люблю Ella •
-        Seni seviyorum Ella •
-    </div>
-</div>
+            // THEME SWITCHER
+            const body = document.body;
+            const navDefault = document.getElementById('nav-theme-default');
+            const navRed = document.getElementById('nav-theme-red');
+            const navPurple = document.getElementById('nav-theme-purple');
 
-<!-- INFO BLOCKS -->
-<section class="info">
+            function setTheme(themeName) {
+                body.classList.remove('theme-red', 'theme-purple');
+                if (themeName === 'red') body.classList.add('theme-red');
+                else if (themeName === 'purple') body.classList.add('theme-purple');
+            }
 
-    <div class="info-row">
-        <div class="box"></div>
-        <div class="text">
-            <h2>Moments I Treasure</h2>
-                <p>
-                From random conversations to unforgettable days,
-                you make ordinary time feel special.
-                </p>
-        </div>
-    </div>
+            function updateActiveButton(activeBtn) {
+                [navDefault, navRed, navPurple].forEach(btn => btn.classList.remove('active'));
+                activeBtn.classList.add('active');
+            }
 
-    <div class="info-row reverse">
-        <div class="box"></div>
-        <div class="text">
-                <h2>Why You Matter</h2>
-                <p>
-                    Your kindness, your laughter, and your strength
-                    are things I admire more than words can explain.
-                </p>
-        </div>
-    </div>
+            navDefault.addEventListener('click', function() { setTheme('default'); updateActiveButton(navDefault); });
+            navRed.addEventListener('click', function() { setTheme('red'); updateActiveButton(navRed); });
+            navPurple.addEventListener('click', function() { setTheme('purple'); updateActiveButton(navPurple); });
 
-    <div class="info-row">
-        <div class="box"></div>
-        <div class="text">
-            <h2>Header 1</h2>
-            <p>Lorem ipsum text here...</p>
-        </div>
-    </div>
+            // CAROUSEL SCROLL
+            const track = document.getElementById('carousel-track');
+            const leftBtn = document.getElementById('carousel-left');
+            const rightBtn = document.getElementById('carousel-right');
 
-</section>
+            if (track && leftBtn && rightBtn) {
+                const scrollAmount = 330;
+                leftBtn.addEventListener('click', () => track.scrollBy({ left: -scrollAmount, behavior: 'smooth' }));
+                rightBtn.addEventListener('click', () => track.scrollBy({ left: scrollAmount, behavior: 'smooth' }));
+            }
 
-<div class="love-marquee">
-    <div class="track">
-        I love you Ella • Mahal kita Ella • Te amo Ella •
-        Je t'aime Ella • Ich liebe dich Ella •
-        사랑해 Ella • 愛してる Ella •
-        Ti amo Ella • Я тебя люблю Ella •
-        Seni seviyorum Ella •
-    </div>
-</div>
+            // ENVELOPE INTERACTION
+            const envelope = document.getElementById('envelope');
+            const letterCard = document.getElementById('letterCard');
+            const closeBtn = document.getElementById('closeLetterBtn');
 
-<!-- GALLERY -->
-<section class="gallery">
-    <h2>GALLERY HEADER</h2>
+            if (envelope && letterCard) {
+                envelope.addEventListener('click', function() {
+                    envelope.classList.add('hidden');
+                    letterCard.classList.add('visible');
+                });
+            }
 
-    <div class="gallery-grid">
-        <div class="img"></div>
-        <div class="img"></div>
-        <div class="img"></div>
-        <div class="img"></div>
-        <div class="img"></div>
-        <div class="img"></div>
-        <div class="img"></div>
-        <div class="img"></div>
-        <div class="img"></div>
-    </div>
-</section>
-
-
-<footer class="footer">
-    <p>&copy; 2026 Valentine's Day. All rights reserved.</p>
+            if (closeBtn && letterCard && envelope) {
+                closeBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    letterCard.classList.remove('visible');
+                    envelope.classList.remove('hidden');
+                });
+            }
+        })();
+    </script>
 </body>
 </html>
